@@ -41,7 +41,9 @@ You found the correct password. Secret message is:
 
 `root@d40ba1864d9a:/usr/app# tail -f logs.txt `
 ```
+...
 Thu, 08 Aug 2019 18:43:45 GMT
 Secret message is:
 "Docker is easy"
+...
 ```
