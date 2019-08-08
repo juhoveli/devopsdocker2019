@@ -31,7 +31,6 @@ You found the correct password. Secret message is:
 "This is the secret message"
 ```
 
-
 ### Exercise 1.4
 `$ docker run devopsdockeruh/exec_bash_exercise`
 
@@ -39,11 +38,27 @@ You found the correct password. Secret message is:
 
 `$ docker exec -it sad_mcclintock bash`
 
-`root@d40ba1864d9a:/usr/app# tail -f logs.txt `
+`# tail -f logs.txt `
 ```
 ...
 Thu, 08 Aug 2019 18:43:45 GMT
 Secret message is:
 "Docker is easy"
 ...
+```
+
+### Exercise 1.5
+`$ docker run --rm -it ubuntu:16.04 sh -c 'apt-get update; apt-get install curl; echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'`
+```
+...
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
 ```
