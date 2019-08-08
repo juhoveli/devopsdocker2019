@@ -34,8 +34,11 @@ You found the correct password. Secret message is:
 
 ### Exercise 1.4
 `$ docker run devopsdockeruh/exec_bash_exercise`
+
 `$ docker start sad_mcclintock`
+
 `$ docker exec -it sad_mcclintock bash`
+
 `root@d40ba1864d9a:/usr/app# tail -f logs.txt `
 ```
 Thu, 08 Aug 2019 18:43:45 GMT
