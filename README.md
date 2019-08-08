@@ -3,7 +3,7 @@
 ## Part 1 exercises
 
 ### Exercise 1.1
-``$ docker ps -a`
+`$ docker ps -a`
 ```
 CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS                     PORTS               NAMES
 2671bb47f57a        nginx                 "nginx -g 'daemon of…"   28 seconds ago      Up 27 seconds              80/tcp              stoic_clarke
