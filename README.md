@@ -12,3 +12,12 @@ b9aa5c805fe6        nginx                 "nginx -g 'daemon of…"   48 seconds 
 ```
 
 ### Exercise 1.2
+`$ docker ps -a`
+```
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+```
+
+`$ docker images`
+```
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+
