@@ -91,3 +91,14 @@ echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$w
 `$ docker build -t curler .`
 
 `$ docker run -it --rm curler`
+
+### Exercise 1.8
+
+`$ touch logs.txt`
+
+`$ docker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise`
+```
+(node:1) ExperimentalWarning: The fs.promises API is experimental
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+```
