@@ -107,3 +107,6 @@ Wrote to file /usr/app/logs.txt
 Fri, 09 Aug 2019 13:26:52 GMT
 Fri, 09 Aug 2019 13:26:55 GMT
 ```
+
+### Exercise 1.9
+`$ docker run -p 5000:80 devopsdockeruh/ports_exercise`
