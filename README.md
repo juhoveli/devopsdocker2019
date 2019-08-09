@@ -130,9 +130,40 @@ On host machine:
 
 `$ docker build -t frontend .`
 
-`$ docker run -it -p 5000:5000 frontend`
+`$ docker run -p 5000:5000 frontend`
 
-On browser:
+On browser when connecting to localhost:5000:
 ```
 Exercise 1.10: Congratulations! You configured your ports correctly!
+```
+
+### Exercise 1.11
+Dockerfile
+```
+FROM ubuntu:latest
+WORKDIR /usr/src/app
+RUN apt-get update
+RUN apt-get -y install curl
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN apt-get install -y nodejs
+RUN apt-get install -y git
+RUN git clone https://github.com/docker-hy/backend-example-docker.git .
+EXPOSE 8000
+RUN npm install
+CMD ["npm", "start"]
+```
+On host machine:
+`$ docker build -t backend .`
+
+`$ docker run -v $(pwd)/logs.txt:/usr/src/app/logs.txt -p 8000:8000 backend`
+
+On browser when connecting to localhost:8000:
+```
+Port configured correctly, generated message in logs.txt
+```
+logs.txt
+```
+8/9/2019, 5:04:28 PM: Connection received in root
+8/9/2019, 5:04:28 PM: Connection received in root
+8/9/2019, 5:04:29 PM: Connection received in root
 ```
