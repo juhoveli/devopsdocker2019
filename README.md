@@ -72,3 +72,21 @@ CMD ["-c"]
 `$ docker build -t docker-clock .`
 
 `$ docker run docker-clock`
+
+### Exercise 1.7
+Dockerfile 
+```
+FROM ubuntu:16.04
+RUN apt-get update 
+RUN apt-get -y install curl
+COPY script.sh .
+RUN chmod +x script.sh
+CMD ./script.sh
+```
+script.sh
+```
+#!/bin/bash
+echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;
+```
+`$ docker build -t curler .`
+`$ docker run -it --rm curler`
