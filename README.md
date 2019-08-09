@@ -62,3 +62,12 @@ Searching..
 <p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
 </body></html>
 ```
+
+### Exercise 1.6
+Dockerfile
+```
+FROM devopsdockeruh/overwrite_cmd_exercise 
+CMD ["-c"]
+```
+`$ docker build -t docker-clock .`
+`$ docker run docker-clock`
