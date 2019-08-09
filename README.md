@@ -102,3 +102,8 @@ echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$w
 Wrote to file /usr/app/logs.txt
 Wrote to file /usr/app/logs.txt
 ```
+cat logs.txt (on host)
+```
+Fri, 09 Aug 2019 13:26:52 GMT
+Fri, 09 Aug 2019 13:26:55 GMT
+```
