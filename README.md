@@ -120,20 +120,19 @@ RUN apt-get update
 RUN apt-get -y install curl
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt-get install -y nodejs
-COPY package.json package-lock.json* /usr/src/app/
+RUN apt-get install -y git
+RUN git clone https://github.com/docker-hy/frontend-example-docker.git .
 EXPOSE 5000
 RUN npm install
-COPY . .
 CMD ["npm", "start"]
 ```
 On host machine:
-`$ git clone https://github.com/docker-hy/frontend-example-docker.git`
 
 `$ docker build -t frontend .`
 
 `$ docker run -it -p 5000:5000 frontend`
 
-Browser localhost:5000
+On browser:
 ```
 Exercise 1.10: Congratulations! You configured your ports correctly!
 ```
