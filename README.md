@@ -256,3 +256,7 @@ RUN rails db:migrate
 CMD rails s
 ```
 `$ docker run -it --rm -p 3000:3000 ruby`
+
+### Exercise 1.15
+Link to Dockerhub including instructions:
+https://hub.docker.com/r/juhoveli/unicafe
