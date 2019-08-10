@@ -14,6 +14,7 @@
       * [Exercise 1.11](#exercise-111)
       * [Exercise 1.12](#exercise-112)
       * [Exercise 1.13](#exercise-113)
+      * [Exercise 1.14](#exercise-114)
 
 ## Part 1 exercises
 
