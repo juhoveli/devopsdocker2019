@@ -16,6 +16,7 @@
       * [Exercise 1.13](#exercise-113)
       * [Exercise 1.14](#exercise-114)
       * [Exercise 1.15](#exercise-115)
+      * [Exercise 1.16](#exercise-116)
 
 ## Part 1 exercises
 
@@ -261,3 +262,7 @@ CMD rails s
 ### Exercise 1.15
 Link to Dockerhub including instructions:
 https://hub.docker.com/r/juhoveli/unicafe
+
+### Exercise 1.16
+Link to Heroku App:
+https://unicafe.herokuapp.com
