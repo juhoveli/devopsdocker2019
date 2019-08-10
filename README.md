@@ -236,3 +236,22 @@ RUN ./mvnw package
 CMD java -jar ./target/docker-example-1.1.3.jar
 ```
 `$ docker run -it --rm -p 8080:8080 spring`
+
+### Exercise 1.14
+Dockerfile
+```
+FROM ruby:2.6.0
+WORKDIR /usr/src/app
+RUN apt-get update
+RUN apt-get -y install curl
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN apt-get install -y nodejs
+RUN apt-get install -y git
+EXPOSE 3000
+RUN git clone https://github.com/docker-hy/rails-example-project.git .
+RUN gem install bundler
+RUN bundle install
+RUN rails db:migrate
+CMD rails s
+```
+`$ docker run -it --rm -p 3000:3000 ruby`
