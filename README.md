@@ -1,7 +1,5 @@
 # devopsdocker2019
 
-Table of Contents
-=================
    * [Part 1 exercises](#part-1-exercises)
       * [Exercise 1.1](#exercise-11)
       * [Exercise 1.2](#exercise-12)
