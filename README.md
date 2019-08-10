@@ -153,6 +153,7 @@ RUN npm install
 CMD ["npm", "start"]
 ```
 On host machine:
+
 `$ docker build -t backend .`
 
 `$ docker run -v $(pwd)/logs.txt:/usr/src/app/logs.txt -p 8000:8000 backend`
@@ -168,7 +169,7 @@ logs.txt
 8/9/2019, 5:04:29 PM: Connection received in root
 ```
 
-### Exercise 
+### Exercise 1.12
 backend Dockerfile
 ```
 FROM ubuntu:latest
@@ -202,6 +203,7 @@ CMD npm start
 ```
 
 start commands
+
 `$ docker run -v $(pwd)/logs.txt:/usr/src/app/logs.txt -p 8000:8000 backend`
 
 `$ docker run -p 5000:5000 frontend`
