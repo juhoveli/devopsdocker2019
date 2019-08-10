@@ -167,3 +167,41 @@ logs.txt
 8/9/2019, 5:04:28 PM: Connection received in root
 8/9/2019, 5:04:29 PM: Connection received in root
 ```
+
+### Exercise 
+backend Dockerfile
+```
+FROM ubuntu:latest
+WORKDIR /usr/src/app
+RUN apt-get update
+RUN apt-get -y install curl
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN apt-get install -y nodejs
+RUN apt-get install -y git
+RUN git clone https://github.com/docker-hy/backend-example-docker.git .
+EXPOSE 8000
+ENV FRONT_URL="http://localhost:5000"
+RUN npm install
+CMD npm start
+```
+
+frontend Dockerfile
+```
+FROM ubuntu:latest
+WORKDIR /usr/src/app
+RUN apt-get update
+RUN apt-get -y install curl
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN apt-get install -y nodejs
+RUN apt-get install -y git
+RUN git clone https://github.com/docker-hy/frontend-example-docker.git .
+EXPOSE 5000
+ENV API_URL="http://localhost:8000"
+RUN npm install
+CMD npm start
+```
+
+start commands
+`$ docker run -v $(pwd)/logs.txt:/usr/src/app/logs.txt -p 8000:8000 backend`
+
+`$ docker run -p 5000:5000 frontend`
