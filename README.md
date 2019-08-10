@@ -13,6 +13,7 @@
       * [Exercise 1.10](#exercise-110)
       * [Exercise 1.11](#exercise-111)
       * [Exercise 1.12](#exercise-112)
+      * [Exercise 1.13](#exercise-113)
 
 ## Part 1 exercises
 
@@ -221,3 +222,17 @@ start commands
 `$ docker run -it --rm -v $(pwd)/logs.txt:/usr/src/app/logs.txt -p 8000:8000 backend`
 
 `$ docker run -it --rm -p 5000:5000 frontend`
+
+### Exercise 1.13
+Dockerfile
+```
+FROM openjdk:8
+RUN apt-get update
+RUN apt-get install git
+RUN git clone https://github.com/docker-hy/spring-example-project.git
+WORKDIR spring-example-project/
+EXPOSE 8080
+RUN ./mvnw package
+CMD java -jar ./target/docker-example-1.1.3.jar
+```
+`$ docker run -it --rm -p 8080:8080 spring`
