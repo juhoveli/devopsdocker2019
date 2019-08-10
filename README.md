@@ -218,6 +218,6 @@ CMD npm start
 
 start commands
 
-`$ docker run -v $(pwd)/logs.txt:/usr/src/app/logs.txt -p 8000:8000 backend`
+`$ docker run -it --rm -v $(pwd)/logs.txt:/usr/src/app/logs.txt -p 8000:8000 backend`
 
-`$ docker run -p 5000:5000 frontend`
+`$ docker run -it --rm -p 5000:5000 frontend`
