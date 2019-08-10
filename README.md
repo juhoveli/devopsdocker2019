@@ -2,21 +2,19 @@
 
 Table of Contents
 =================
-
-   * [devopsdocker2019](#devopsdocker2019)
-      * [Part 1 exercises](#part-1-exercises)
-         * [Exercise 1.1](#exercise-11)
-         * [Exercise 1.2](#exercise-12)
-         * [Exercise 1.3](#exercise-13)
-         * [Exercise 1.4](#exercise-14)
-         * [Exercise 1.5](#exercise-15)
-         * [Exercise 1.6](#exercise-16)
-         * [Exercise 1.7](#exercise-17)
-         * [Exercise 1.8](#exercise-18)
-         * [Exercise 1.9](#exercise-19)
-         * [Exercise 1.10](#exercise-110)
-         * [Exercise 1.11](#exercise-111)
-         * [Exercise 1.12](#exercise-112)
+   * [Part 1 exercises](#part-1-exercises)
+      * [Exercise 1.1](#exercise-11)
+      * [Exercise 1.2](#exercise-12)
+      * [Exercise 1.3](#exercise-13)
+      * [Exercise 1.4](#exercise-14)
+      * [Exercise 1.5](#exercise-15)
+      * [Exercise 1.6](#exercise-16)
+      * [Exercise 1.7](#exercise-17)
+      * [Exercise 1.8](#exercise-18)
+      * [Exercise 1.9](#exercise-19)
+      * [Exercise 1.10](#exercise-110)
+      * [Exercise 1.11](#exercise-111)
+      * [Exercise 1.12](#exercise-112)
 
 ## Part 1 exercises
 
